@@ -147,3 +147,114 @@ DYNAMIC TYPING
 #print('apha'.find('a',1))# this will give the index of the first occurance of the character after the index 1..output=3
 #print('apha' in 'apha')# this will give true
 #print('apha' not in 'apha')# this will give false
+
+#print('apha'.count('a'))# this will give the count of the character OUPUT IS 2
+#print('apha'.count('a',1))# this will give the count of the character after the index 1 OUTPUT IS 1
+#print('apha'.count('a',1,3))# this will give the count of the character after the index 1 and before the index 3 OUTPUT IS 0
+
+
+#Multiple Relational operators
+#x=5
+#print(1<x<10)# this will give true
+#print(10<x<20) # this will give false
+#print(x<10<x*10-100)  # this will give false
+#print(x<10<x*10 <100) # this will give true
+#print( 10>x<=9)# this will give true
+#print(5==x>4) # this will give true
+
+
+#Escape character in print statement
+#print('It's a book')# invalid syntax
+#print("It's a book")# output will be It's a book
+#print('It\'s a book')# output will be It's a book
+#\ is used to escape the character
+#print("WE are from \"IIT\" MADRAS")# output will be WE are from "IIT" MADRAS
+#print ("I am Aditya .\t I am from India.\n I am a student of IIT MADRAS.")
+# ouput is :I am Aditya .    I am from India.
+# I am a student of IIT MADRAS.
+#\n is used to go to the next line
+#\t is used to give a tab space
+#\\ is used to give a backslash
+'''s='hello
+world'
+print(s)#this will give an error because the string is not closed and the string is not in the same line'''
+
+#s='''hello
+#we are together'''
+#print(s) #output will be hello we are together'''
+#''' is used to give a multi line string
+''' this is a multi line comment'''
+'''comment 1
+comment 2
+comment 3'''
+
+
+#STRING METHODS
+X="pytHoN sTring"
+#.LOWER() is used to convert the string to lower case
+#print(X.lower())#OUTPUT IS python string
+
+#.UPPER() is used to convert the string to upper case
+#print(X.upper())#output is PYTHON STRING
+
+#.CAPITALIZE() is used to convert the first character of the string to upper case
+#print(X.capitalize())#output is Python string
+
+#.TITLE() is used to convert the first character of each word to upper case
+#print(X.title())#output is Python String
+
+#SWAPCASE() is used to swap the case of the string
+#print(X.swapcase())#output is PYThOn StRING
+
+#islower() is used to check if the string is in lower case.
+#if all the characters are in lower case then it will return true
+#print(X.islower())#output is false
+
+#isupper() is used to check if the string is in upper case
+#if all the characters are in upper case then it will return true
+#print(X.isupper())#output is false
+
+#istitle() is used to check if the string is in title case.
+#if all the rules all of the words are in title case then it will return true
+#print(X.istitle())#is false
+
+#isdgit() is used to check if the string is a digit
+#returns true if all the characters are digits
+#y="123"
+#print(y.isdigit())#output is true
+
+#isalpha() is used to check if the string is an alphabet
+#if all the characters are alphabets then it will return true
+#y="abc"
+#print(y.isalpha())#ouput is true
+
+#isascii() is used to check if the string is an ascii
+#example of ascii is a-z,A-Z,0-9,special characters
+#z="abc123"
+#print(z.isascii())#output is true
+
+#isalnum() is used to check if the string is an alphanumeric
+#only alphabets and numbers are allowed
+#not special characters
+#z="abc123"
+#print(z.isalnum())#output is true
+
+#strip() is used to remove the white spaces from the string
+#z='------PYTHON----'
+#print(z.strip('-')) #output is PYTHON
+#z="-####Python##---"
+#print(z.strip('-#'))#output is Python
+
+#lstrip() is used to remove the white spaces from the left side of the string
+#z='------PYTHON----'  
+#print(z.lstrip('-'))
+     #output is PYTHON----
+#rstrip() is used to remove the white spaces from the right side of the string
+#z='------PYTHON----'
+#print(z.rstrip('-'))#output is ------PYTHON
+
+#z=('----pyth-on---')
+#print(z.strip('-'))#output is pyth-on
+
+
+#startswith() is used to check if the string starts with the given string
