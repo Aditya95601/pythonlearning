@@ -258,3 +258,58 @@ X="pytHoN sTring"
 
 
 #startswith() is used to check if the string starts with the given string
+#z="Pyhton"
+#this is case sensitive
+#print(z.startswith('P'))#output is true
+#endswith() is used to check if the string ends with the given string
+#print(z.endswith('N'))#output is false
+#print(z.count('y,1,3'))#output is 0
+
+#count() is used to count the number of times the given string is present in the string
+#z="APPPLE"
+#print(z.count('P'))#output is 3
+#print(z.count('P',1,3))#output is 2, THIS SLICES FROM THE INDEX 1 TO 3-1=2
+#print(z.count('P',1,3))#Output is 2
+#print(z.count('P',1,4))# means the string is present from the index 1 to 4-1=3 i.e "PPP" and the count is 3" 
+#print(z[1:4])#output is PPP
+#print(z[1:3])# output=PP, THIS IS THE SLICING OPERATOR AND SLICES FROM THE INDEX 1 TO 3-1=2
+
+
+#index() is used to find the index of the given string
+#z="APPPpLE"
+#print(z.index('P'))#output is 1(this return index of the first occurance of the string)
+#rindex() is used to find the index of the given string from the right side.
+#print(z.rindex('P'))#output is 3(this return index of the first occurance of the string from the right side)
+#print(z.replace('A','P'))
+
+#An intresting thing is that the string is immutable means that the string cannot be changed
+#z="APPPpLE"
+#z[1]='P'#this will give an error because the string is immutable
+
+
+
+#how to avoid the index out of range error
+alphabet='abcdefghijklmnopqrstuvwxyz'
+#i=23
+#print(alphabet[i+1])#output is y
+#print(alphabet[i+2])#outptut is z
+#print(alphabet[i+3])#this will give an error because the index is out of range
+#inorder to avoid this error we can use the modulus operator example below
+#print(alphabet[(i+1)%26])#output is y     
+ #24%26=24
+#application of this is in the caesar cipher
+#this is a simple encryption technique
+#this is a substitution cipher
+
+#To program a caesar cipher(this is a simple encryption technique)
+
+#eg s='abcd'# output=bcde
+#s=input(str("enter the string"))
+#i=0
+#a=''
+#for i in range(len(s)):
+ #    j=((alphabet.index((s[i]))+1)%26)# 26 is used to avoid the index out of range error
+  #   t=alphabet[j]
+   #  a=a+t
+#print(a)
+#if shifting is by 2,3,4 then replace the 1 with 2,3,4 in line 311
